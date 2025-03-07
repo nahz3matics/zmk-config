@@ -30,7 +30,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "default";
+            label = "QWERTY";
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |  BSPC |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |   U   |   I   |  O   |   P   |   \   |
@@ -49,7 +49,7 @@
         };
 
         lower_layer {
-            display-name = "LOWER";
+            label = "LOWER";
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // | `~   |  F1  |  F2  |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
@@ -69,7 +69,7 @@
         };
 
         raise_layer {
-            display-name = "RAISE";
+            label = "RAISE";
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |      |      |      |       |       |      |                | PGUP |      |   ^   |      |       |       |
@@ -92,13 +92,13 @@
 // ------------------------------------------------------------------------------------------------------------
 // |USB/BLE|TOGBLE|TOGUSB|      |       |      |                |      |      |       |      |       |       |
 // |EXTPWR |      |      |      |       |      |                |      |      |       |      |       |       |
-// |       |      |      |      |       | GAME |                |      |      |       |      |       |       |
+// |       |      |      |      |       |      |                |      |      |       |      |       |       |
 // |       |      |      |      |       |      |      |  |      |      |      |       |      |       |       |
 //                |      |      |       |      |      |  |      |      |      |       |      |
         bindings = <
 &out OUT_TOG       &out OUT_BLE  &out OUT_USB  &none  &none  &none                       &none  &none  &none  &none  &none  &none
 &ext_power EP_TOG  &none         &none         &none  &none  &none                       &none  &none  &none  &none  &none  &none
-&none              &none         &none         &none  &none  &tog GAME                   &none  &none  &none  &none  &none  &none
+&none              &none         &none         &none  &none  &none                       &none  &none  &none  &none  &none  &none
 &none              &none         &none         &none  &none  &none       &none  &none    &none  &none  &none  &none  &none  &none
                                  &none         &none  &none  &none       &none  &none    &none  &none  &none  &none
             >;
